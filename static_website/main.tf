@@ -1,7 +1,6 @@
 resource "aws_s3_bucket" "this" {
   bucket        = var.bucket_name
   force_destroy = true
-  # plus d'acl ici pour éviter erreur ACL bloquées
 }
 
 resource "aws_s3_bucket_website_configuration" "this" {
